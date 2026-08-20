@@ -12,7 +12,7 @@ log_entry() {
   local action="$1"
   local status="$2"
   local msg="$3"
-  logger -p user.${status} -t ${action} "fedora_luks_tpm: ${msg}"
+  logger -p user."${status}" -t "${action}" "fedora_luks_tpm: ${msg}"
 }
 
 # Make sure file is run as a root.
